@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# Welcome to React-TS-Use it for the sake of using it
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🤔 Ever had that moment where you're doing something at work and suddenly you're like, 
 
-## Available Scripts
+### "I've done this before, I'm sure of it. It's in one of these projects on my GitHub... Was it..? No. Was it...? Hmm.. Where is it?"
 
-In the project directory, you can run:
+Well that's why I decided to make this. Aim is to use all the tools in the box for the sake of having a quick reference on how I last used them.
+
+# Stuff about this App:
+
+## Available Scripts, always double check in package.json in case some crazy fool has changed them:
+
+In the project directory from the terminal, you can run:
 
 ### `npm start`
 
@@ -29,17 +35,11 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Shoutout to those who made this possible:
+🐱‍👤 [Create React App](https://github.com/facebook/create-react-app).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
+## Learn More Here:
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
