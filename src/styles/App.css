@@ -2,6 +2,9 @@
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
+  color: white;
+  font-size: calc(5px + 2vmin);
+  padding: 0 calc(5vw) 0 calc(5vw);
   /*No highlighting!*/
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -13,7 +16,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: calc(10px + 2vmin);
   pointer-events: none;
 }
 
@@ -25,11 +28,20 @@
 
 .App-header {
   font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: calc(1px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  font-size: calc(5px + 2vmin);
+  margin: calc(2px + 1vmin);
+  padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+  border-radius: 15px;
+  border: pink solid 0.5vmin;
+  background-color: rgb(248, 115, 137);
+}
+button:hover {
+  border: rgb(168, 127, 134) solid 0.5vmin;
+  background-color: rgb(151, 71, 84);
 }
 
 @keyframes App-logo-spin {
