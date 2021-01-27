@@ -38,6 +38,7 @@ button {
   border-radius: 15px;
   border: pink solid 0.5vmin;
   background-color: rgb(248, 115, 137);
+  outline:none;
 }
 button:hover {
   border: rgb(168, 127, 134) solid 0.5vmin;
