@@ -1,17 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import { LandingPage } from './components/LandingPage';
-import { NavBar } from './components/NavBar';
-import { TimeOnApp } from './components/TimeOnApp';
+// Indexed export file for components to reduce import declarations. For the sake of it.
+import { NavBar, LandingPage, TimeOnApp } from './components/index';
+// Indexed export file for enums to reduce import declarations. For the sake of it.
+import { pageTypes } from './enums/index';
 import './styles/App.css';
 
 
-export enum pageTypes {
-  landingPage = '/',
-  useEffectPage = '/useEffect',
-  timeOnApp = '/timeOnApp',
-  useReducerPage = '/useReducer'
-}
 
 function App() {
   const [timeOnApp, setTimeOnApp] = useState<number>(0);
@@ -29,7 +24,8 @@ function App() {
   })
 
   // UseEffect that triggers on change of timeOnApp state. This will mean our reference to the timer .. 
-  // .. will always be 1 second behind.
+  // .. will always be 1 second behind. Not sure if it's beneficial, could just pass the state, but .. 
+  // .. then the rule is use it for the sake of using it. So we have.
   useEffect(() => {
     timeRef.current = timeOnApp;
   }, [timeOnApp])

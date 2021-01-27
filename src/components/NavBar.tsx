@@ -1,11 +1,10 @@
 import React from 'react';
-import {
-    Link
-  } from "react-router-dom";
-import logo from '../assets/logo.svg';
+import { Link } from "react-router-dom";
+import { pageTypes } from '../enums/index';
+
 import { FaHome, FaStopCircle } from 'react-icons/fa';
+import logo from '../assets/logo.svg';
 import '../styles/App.css';
-import { pageTypes } from '../App';
 
 export const NavBar: React.FC = () =>{
 
