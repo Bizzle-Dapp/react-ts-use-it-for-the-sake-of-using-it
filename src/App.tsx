@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { LandingPage } from './components/LandingPage';
+import { NavBar } from './components/NavBar';
+import './styles/App.css';
+
+
+export enum pageTypes {
+  landingPage = '/',
+  useEffectPage = '/useEffect',
+  useRefPage = '/useRef',
+  useReducerPage = '/useReducer'
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar pageTypes={pageTypes} />
+        <Switch>
+          <Route path={pageTypes.useRefPage}>
+            <div>some other page</div>
+          </Route>
+          <Route path={pageTypes.landingPage}>
+            <LandingPage />
+          </Route>
+        </Switch>
+        
+      </Router>
     </div>
+    
   );
 }
 
