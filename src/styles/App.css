@@ -40,11 +40,21 @@
   border: pink solid 0.5vmin; /* This doesn't actually work. Input checkbox can't seem to be customised with CSS - further reading required. */
 }
 
+.Image-Path-Input {
+  height: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
+  width: 60vw;
+  padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px  grey;
+}
+
 button {
   font-size: calc(5px + 2vmin);
   margin: calc(2px + 1vmin);
   padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
   border-radius: 15px;
+  box-shadow: 1px 1px 5px  grey;
   border: pink solid 0.5vmin;
   background-color: rgb(248, 115, 137);
   outline:none;

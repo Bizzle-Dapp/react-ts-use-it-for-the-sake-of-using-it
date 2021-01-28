@@ -16,7 +16,11 @@ export const NavBar: React.FC = () =>{
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <span>Welcome to: <code>React TS Use It For The Sake Of Using It</code></span>
-                <span className="Theme-Toggle-Container"><label>{darkModeActive ? "🌙" : "🌞"} <input className="Theme-Toggle" type="checkbox" checked={darkModeActive} onClick={() => setDarkModeActive(!darkModeActive)} /></label></span>
+                <span className="Theme-Toggle-Container">
+                    <label>{darkModeActive ? "🌙" : "🌞"}
+                        <input className="Theme-Toggle" type="checkbox" checked={darkModeActive} onChange={() => setDarkModeActive(!darkModeActive)} />
+                    </label>
+                </span>
             </header>
             <Link to={`${pageTypes.landingPage}`}>
                 <button><FaHome/> Home</button>
@@ -24,6 +28,6 @@ export const NavBar: React.FC = () =>{
             <Link to={`${pageTypes.timeOnApp}`}>
                 <button><FaStopCircle/> Time on App</button>
             </Link>
-        </>
+        </> 
     )
 }

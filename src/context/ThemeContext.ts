@@ -1,15 +1,18 @@
 import { createContext, useContext } from 'react';
 
+// Define a definition of what our ThemeStyle comprises of.
 export interface IThemeStyle {
     backgroundColor: string,
     color: string,
 }
 
+// Define the properties of our Context - in this case, a Getter and Setter for whether we are viewing in Dark Mode or not.
 interface IThemeContext {
     darkModeActive: boolean,
     setDarkModeActive: (boolean: boolean) => void
 }
 
+// A method to return ThemeStyles based on a boolean.
 export const getTheme = (darkModeActive: boolean): IThemeStyle =>   {
     if(darkModeActive) {
         return {
@@ -24,6 +27,7 @@ export const getTheme = (darkModeActive: boolean): IThemeStyle =>   {
     }
 }
 
+// Our actual Context Definition
 export const ThemeContext = createContext<IThemeContext>(
     {   
         darkModeActive: false, 
