@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #c0d0f1;
   min-height: 100vh;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: calc(5px + 2vmin);
   padding: 0 calc(5vw) 0 calc(5vw);
   /*No highlighting!*/
@@ -31,6 +31,15 @@
   margin-bottom: calc(1px + 2vmin);
 }
 
+.Theme-Toggle-Container {
+  position: fixed;
+  right: 2vw;
+}
+
+.Theme-Toggle[type="checkbox"] {
+  border: pink solid 0.5vmin; /* This doesn't actually work. Input checkbox can't seem to be customised with CSS - further reading required. */
+}
+
 button {
   font-size: calc(5px + 2vmin);
   margin: calc(2px + 1vmin);
@@ -53,3 +62,4 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+

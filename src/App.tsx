@@ -1,14 +1,21 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // Indexed export file for components to reduce import declarations. For the sake of it.
 import { NavBar, LandingPage, TimeOnApp } from './components/index';
 // Indexed export file for enums to reduce import declarations. For the sake of it.
 import { pageTypes } from './enums/index';
+
+// React Context used for the sake of a Theme
+import { ThemeContext, getTheme } from './context/ThemeContext';
+
+// Default Theme and Styling import
 import './styles/App.css';
 
 
-
 function App() {
+  const [darkModeActive, setDarkModeActive] = useState<boolean>(false);
+
+  // State to retain the time spent on App - providing an additional Ref to be passed to other components.
   const [timeOnApp, setTimeOnApp] = useState<number>(0);
   const timeRef = useRef(0)
   
@@ -31,19 +38,22 @@ function App() {
   }, [timeOnApp])
 
   return (
-    <div className="App">
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route path={pageTypes.timeOnApp}>
-            <TimeOnApp timeRef={timeRef}/>
-          </Route>
-          <Route path={pageTypes.landingPage}>
-            <LandingPage />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <ThemeContext.Provider value={{darkModeActive, setDarkModeActive }}>
+      <div className="App" style={getTheme(darkModeActive)} >
+        <Router>
+          <NavBar />
+          <Switch>
+            <Route path={pageTypes.timeOnApp}>
+              <TimeOnApp timeRef={timeRef}/>
+            </Route>
+            <Route path={pageTypes.landingPage}>
+              <LandingPage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </ThemeContext.Provider>
+    
     
   );
 }
