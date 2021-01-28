@@ -20,8 +20,7 @@ test('Determines the truthyness of being true', () => {
   render(<App />);
   expect(true).toBeTruthy();
 });
-
-// Now for the real big brain, going to try and test a timer... 
+ 
 test('If Routing from App to Time on App works.',  () => {
   console.log("Mounting App...")
   render(<App />)
