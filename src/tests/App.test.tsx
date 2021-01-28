@@ -3,18 +3,6 @@ import { render, screen } from '@testing-library/react';
 import App from '../App';
 
 
-beforeAll(() => {
-  jest.useFakeTimers();
-});
-
-afterEach(() => {
-  jest.clearAllTimers();
-});
-
-afterAll(() => {
-  jest.useRealTimers();
-});
-
 // Big brain, GO!
 test('Determines the truthyness of being true', () => {
   render(<App />);
