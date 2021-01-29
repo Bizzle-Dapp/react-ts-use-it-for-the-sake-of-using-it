@@ -31,6 +31,12 @@
   margin-bottom: calc(1px + 2vmin);
 }
 
+.Form-Container {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
 .Theme-Toggle-Container {
   position: fixed;
   right: 2vw;
@@ -49,6 +55,20 @@
   box-shadow: 1px 1px 5px  grey;
 }
 
+.Details-Form-Input {
+    display: inline-block;
+    height: calc(6px + 2vmin);
+    font-size: calc(6px + 1vmin);
+    width: 30vw;
+    padding: calc(3px + 1vmin) calc(5px + 1vmin) calc(3px + 1vmin) calc(5px + 1vmin);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px  grey;
+}
+
+.Locked-Input {
+  background-color: bisque;
+}
+
 button {
   font-size: calc(5px + 2vmin);
   margin: calc(2px + 1vmin);
@@ -62,6 +82,12 @@ button {
 button:hover {
   border: rgb(168, 127, 134) solid 0.5vmin;
   background-color: rgb(151, 71, 84);
+}
+
+.Details-Form-Tab-Button {
+  font-size: calc(3px + 2vmin);
+  margin: calc(1px + 1vmin);
+  padding: 0.5vmin calc(2px + 1vmin) 0.5vmin calc(2px + 1vmin);
 }
 
 @keyframes App-logo-spin {

@@ -4,9 +4,8 @@ import '../styles/App.css';
 
 
 export const LandingPage: React.FC = () => {
+    // Path for the image on page, the reason for this is to have a visible example of stateful change on input
     const [imageOnPage, setImageOnPage] = useState<string>("https://cdn.pixabay.com/photo/2020/10/02/13/38/sea-5621150_960_720.jpg")
-    
-
 
     return(
     <>
@@ -17,6 +16,7 @@ export const LandingPage: React.FC = () => {
         </p>
         <div>
             <p>Change the value of this input box to the path of any image on the internet. Providing CORS is open, the image will display in the box below...</p>
+            {/* Input value bound to state, wiht an onChange function that updates the state. */}
             <input className="Image-Path-Input" value={imageOnPage} onChange={(e) => { setImageOnPage(e.target.value) }}></input>
             <br/><br/>
             <img src={imageOnPage} style={{width:"300px"}} alt={`Unable to show path of: ${imageOnPage}`}/>

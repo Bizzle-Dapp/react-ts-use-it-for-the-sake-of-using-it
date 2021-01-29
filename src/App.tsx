@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // Indexed export file for components to reduce import declarations. For the sake of it.
-import { NavBar, LandingPage, TimeOnApp } from './components/index';
+import { NavBar, LandingPage, TimeOnAppPage, DetailsFormPage } from './components/index';
 // Indexed export file for enums to reduce import declarations. For the sake of it.
-import { pageTypes } from './enums/index';
+import { pageTypes } from './InterfacesTypesAndEnums/index';
 
 // React Context used for the sake of a Theme
 import { ThemeContext, getTheme } from './context/ThemeContext';
@@ -42,8 +42,11 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
+            <Route path={pageTypes.detailsForm}>
+              <DetailsFormPage />
+            </Route>
             <Route path={pageTypes.timeOnApp}>
-              <TimeOnApp timeRef={timeRef}/>
+              <TimeOnAppPage timeRef={timeRef}/>
             </Route>
             <Route path={pageTypes.landingPage}>
               <LandingPage />

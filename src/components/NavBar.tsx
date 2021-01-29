@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { pageTypes } from '../enums/index';
+import { pageTypes } from '../InterfacesTypesAndEnums/index';
 import { useTheme } from '../context/ThemeContext';
 
-import { FaHome, FaStopCircle } from 'react-icons/fa';
+import { FaHome, FaPager, FaStopCircle } from 'react-icons/fa';
 import logo from '../assets/logo.svg';
 import '../styles/App.css';
 
@@ -27,6 +27,9 @@ export const NavBar: React.FC = () =>{
             </Link>
             <Link to={`${pageTypes.timeOnApp}`}>
                 <button><FaStopCircle/> Time on App</button>
+            </Link>
+            <Link to={`${pageTypes.detailsForm}`}>
+                <button><FaPager/> Details Form</button>
             </Link>
         </> 
     )
