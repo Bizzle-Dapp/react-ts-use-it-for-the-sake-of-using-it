@@ -53,10 +53,9 @@ function App() {
             </Route>
           </Switch>
         </Router>
+        <br/><br/>
       </div>
     </ThemeContext.Provider>
-    
-    
   );
 }
 
