@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { pageTypes } from '../InterfacesTypesAndEnums/index';
+import { pageTypes } from '../interfacesTypesAndEnums/index';
 import { useTheme } from '../context/ThemeContext';
 
 import { FaHome, FaPager, FaStopCircle } from 'react-icons/fa';

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/App.css';
-import { IDetailsObj } from '../../InterfacesTypesAndEnums';
+import { IDetailsObj } from '../../interfacesTypesAndEnums';
 
 export const DetailsFormView: React.FC<IDetailsObj> = (props: IDetailsObj) => {
 
