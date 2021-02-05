@@ -4,6 +4,8 @@ import './styles/index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
+// Entry point! GO! This here is referring to the element in public/index.html that has the id of "root" .. 
+// .. That is the place where our application will be mounted and placed. 
 ReactDOM.render(
   <React.StrictMode>
     <App />

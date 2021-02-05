@@ -35,6 +35,7 @@ export const ThemeContext = createContext<IThemeContext>(
     }
 );
 
+// Export what we've made, so it can be used somewhere else. 
 export const useTheme = () => useContext(ThemeContext);
 
 

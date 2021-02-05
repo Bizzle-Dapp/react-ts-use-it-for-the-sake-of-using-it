@@ -9,6 +9,7 @@ test('Determines the truthyness of being true', () => {
   expect(true).toBeTruthy();
 });
  
+
 test('If Routing from App to Time on App works.',  () => {
   console.log("Mounting App...")
   render(<App />)

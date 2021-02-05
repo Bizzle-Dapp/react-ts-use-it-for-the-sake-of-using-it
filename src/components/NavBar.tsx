@@ -8,7 +8,7 @@ import logo from '../assets/logo.svg';
 import '../styles/App.css';
 
 export const NavBar: React.FC = () =>{
-    // Stateful context to provide getter and setter function for Theme.
+    // Stateful context to provide getter and setter function for Theme. This is the core manipulation of our context.
     const { darkModeActive, setDarkModeActive } = useTheme();
 
     return(
@@ -18,7 +18,10 @@ export const NavBar: React.FC = () =>{
                 <span>Welcome to: <code>React TS Use It For The Sake Of Using It</code></span>
                 <span className="Theme-Toggle-Container">
                     <label>{darkModeActive ? "🌙" : "🌞"}
-                        <input className="Theme-Toggle" type="checkbox" checked={darkModeActive} onChange={() => setDarkModeActive(!darkModeActive)} />
+                        <input className="Theme-Toggle" 
+                            type="checkbox" 
+                            checked={darkModeActive} 
+                            onChange={() => setDarkModeActive(!darkModeActive)} />
                     </label>
                 </span>
             </header>
