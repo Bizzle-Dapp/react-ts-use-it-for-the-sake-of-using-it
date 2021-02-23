@@ -20,9 +20,9 @@ export const LandingPage: React.FC = () => {
         <div>
             <p>Change the value of this input box to the path of any image on the internet. Providing CORS is open, the image will display in the box below...</p>
             {/* Input value bound to state, wiht an onChange function that updates the state. */}
-            <input className="Image-Path-Input" value={imageOnPage} onChange={(e) => { setImageOnPage(e.target.value) }}></input>
+            <input className="Image-Path-Input" data-testid="Image-Path-Input" value={imageOnPage} onChange={(e) => { setImageOnPage(e.target.value) }}></input>
             <br/><br/>
-            <img src={imageOnPage} style={{width:"300px"}} alt={`Unable to show path of: ${imageOnPage}`}/>
+            <img src={imageOnPage} data-testid="Image-Path-Output" style={{width:"300px"}} alt={`Unable to show path of: ${imageOnPage}`}/>
             <br/><br/>
             <NumberSorter />
         </div>
