@@ -11,17 +11,17 @@ export const DetailsFormView: React.FC<IDetailsObj> = (props: IDetailsObj) => {
                 <input className="Details-Form-Input Locked-Input" 
                         placeholder="Name" 
                         readOnly 
-                        value={ props.Details.name ? props.Details.name : '' } />
+                        value={ props.details.name ? props.details.name : '' } />
                 <br/><br/>
                 <input className="Details-Form-Input Locked-Input" 
                         placeholder="Age" 
                         readOnly 
-                        value={ props.Details.age } />
+                        value={ props.details.age } />
                 <br/><br/>
                 <input className="Details-Form-Input Locked-Input" 
                         placeholder="Email" 
                         readOnly 
-                        value={ props.Details.email ? props.Details.email : '' } />
+                        value={ props.details.email ? props.details.email : '' } />
             </form>
         </>
     )

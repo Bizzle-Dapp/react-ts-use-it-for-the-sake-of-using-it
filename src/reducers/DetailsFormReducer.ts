@@ -7,7 +7,7 @@ type DetailsAction =
 | { type: 'CLEAR_DETAILS' };
 
 export const defaultDetailsState: IDetailsObj = {
-Details: { 
+details: { 
     name: '', 
     age: 0, 
     email: ''}
@@ -16,16 +16,16 @@ Details: {
 export function detailsReducer(state: any, action: DetailsAction): IDetailsObj {
 switch(action.type) {
     case 'SET_NAME':
-        return { ...state, Details: 
+        return { ...state, details: 
                     { ...state.Details, name: action.payload } };
     case 'SET_AGE':
-        return { ...state, Details:
+        return { ...state, details:
                     { ...state.Details, age: action.payload } };
     case 'SET_EMAIL':
-        return { ...state, Details:
+        return { ...state, details:
                     { ...state.Details, email: action.payload } };
     case 'CLEAR_DETAILS':
-        return { ...state, Details: defaultDetailsState };
+        return { ...state, details: defaultDetailsState };
     default:
         return state;
     }

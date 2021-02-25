@@ -1,6 +1,6 @@
 // Baseline interface for the blueprint of a "Details Object"
 export interface IDetailsObj { 
-    Details : {
+    details : {
         name: string,
         age: number,
         email: string,

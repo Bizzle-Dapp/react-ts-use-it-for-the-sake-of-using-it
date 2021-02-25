@@ -17,9 +17,9 @@ export const DetailsFormPage: React.FC = () => {
     const renderComponent = () => {
         switch(selectedTab) {
             case DetailsFormTabSelect.Edit:
-                return (<DetailsFormEdit Details={detailsState.Details} updateDetails={detailsDispatch} />);
+                return (<DetailsFormEdit details={detailsState.details} updateDetails={detailsDispatch} />);
             case DetailsFormTabSelect.View:
-                return (<DetailsFormView Details={detailsState.Details} />);
+                return (<DetailsFormView details={detailsState.details} />);
         }
     }    
 
