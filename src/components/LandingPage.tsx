@@ -8,8 +8,6 @@ export const LandingPage: React.FC = () => {
     // Path for the image on page, the reason for this is to have a visible example of stateful change on input
     const [imageOnPage, setImageOnPage] = useState<string>("https://cdn.pixabay.com/photo/2020/10/02/13/38/sea-5621150_960_720.jpg");
 
-
-
     return(
     <>
         <h1>Home</h1>

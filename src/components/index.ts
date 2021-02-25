@@ -5,8 +5,6 @@ import { DetailsFormPage } from './DetailsFormPage'
 import { DetailsFormEdit } from './DetailsFormPageComponents/DetailsFormEdit';
 import { DetailsFormView } from './DetailsFormPageComponents/DetailsFormView';
 
-
-
 export { NavBar };
 export { LandingPage };
 export { TimeOnAppPage };
