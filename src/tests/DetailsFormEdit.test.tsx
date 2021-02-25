@@ -5,7 +5,7 @@ import { DetailsFormEdit } from '../components/DetailsFormPageComponents/Details
 import { IEditableDetailsObj } from '../interfacesTypesAndEnums';
 
 
-
+// Creating mock data
 const mockProps: IEditableDetailsObj = {
     details: {
         name: "Steve",
@@ -24,7 +24,9 @@ test("If our set state is called with the correct value when name input is chang
     userEvent.clear(detailsInput);
     expect(mockProps.updateDetails).toBeCalledWith({"payload": "", "type": "SET_NAME"})
 
+    // userEvent.type triggers for each character in the string
     userEvent.type(detailsInput, `Dave`);
+    // so we have to waitFor events to complete before our expects can resolve correctly
     waitFor(() => {
         expect(mockProps.updateDetails).toBeCalledWith({"payload": "Dave", "type": "SET_NAME"});
         expect(mockProps.updateDetails).toBeCalledTimes(4);
