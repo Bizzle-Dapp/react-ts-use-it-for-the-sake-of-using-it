@@ -26,10 +26,10 @@ export const NavBar: React.FC = () =>{
                 </span>
             </header>
             <Link to={`${pageTypes.landingPage}`}>
-                <button><FaHome/> Home</button>
+                <button data-testid="Home-Button"><FaHome/> Home</button>
             </Link>
             <Link to={`${pageTypes.timeOnApp}`}>
-                <button><FaStopCircle/> Time on App</button>
+                <button data-testid="Time-On-App-Button"><FaStopCircle/> Time on App</button>
             </Link>
             <Link to={`${pageTypes.detailsForm}`}>
                 <button><FaPager/> Details Form</button>

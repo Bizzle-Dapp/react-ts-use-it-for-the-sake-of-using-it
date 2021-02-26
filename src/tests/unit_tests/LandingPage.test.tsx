@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { LandingPage } from '../components/index';
+import { LandingPage } from '../../components/index';
 
 test("When Image-Path-Input value is change, the src of the image should update", () => {
     render(<LandingPage/>)

@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { DetailsFormEdit } from '../components/DetailsFormPageComponents/DetailsFormEdit';
-import { IEditableDetailsObj } from '../interfacesTypesAndEnums';
+import { DetailsFormEdit } from '../../components/DetailsFormPageComponents/DetailsFormEdit';
+import { IEditableDetailsObj } from '../../interfacesTypesAndEnums';
 
 
 // Creating mock data

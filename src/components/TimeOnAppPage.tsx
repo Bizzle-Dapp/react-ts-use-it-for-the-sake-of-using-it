@@ -8,7 +8,7 @@ interface ITimeOnAppPageProps {
 export const TimeOnAppPage: React.FC<ITimeOnAppPageProps> = (props: ITimeOnAppPageProps) => {
     return(
     <>
-        <h1>Time on App</h1>
+        <h1 data-testid="Page-Title">Time on App</h1>
         <h2>{props.timeRef.current} seconds.</h2>
         <p>That's {(Number(props.timeRef.current) / 60).toFixed(3)} minutes.</p>
         <p>That's {(Number(props.timeRef.current) / 60 / 60).toFixed(4)} hours.</p>
