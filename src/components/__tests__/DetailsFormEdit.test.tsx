@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { DetailsFormEdit } from '../../components/DetailsFormPageComponents/DetailsFormEdit';
+import { DetailsFormEdit } from '../DetailsFormPageComponents/DetailsFormEdit';
 import { IEditableDetailsObj } from '../../interfacesTypesAndEnums';
 
 

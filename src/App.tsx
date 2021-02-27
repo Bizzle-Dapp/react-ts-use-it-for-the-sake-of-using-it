@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // Indexed export file for components to reduce import declarations. For the sake of it.
 import { NavBar, LandingPage, TimeOnAppPage, DetailsFormPage } from './components/index';
 // Indexed export file for enums to reduce import declarations. For the sake of it.
-import { pageTypes } from './interfacesTypesAndEnums/index';
+import { pageTypes } from './interfacesAndTypes/index';
 
 // React Context used for the sake of a Theme
 import { ThemeContext, getTheme } from './context/ThemeContext';

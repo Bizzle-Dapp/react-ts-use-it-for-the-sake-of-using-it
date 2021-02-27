@@ -1,4 +1,4 @@
-import { IDetailsObj } from '../interfacesTypesAndEnums/index';
+import { IDetailsObj } from '../interfacesAndTypes/index';
 
 type DetailsAction =
 | { type: 'SET_NAME'; payload: string }

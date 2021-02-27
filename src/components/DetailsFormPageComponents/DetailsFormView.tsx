@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/App.css';
-import { IDetailsObj } from '../../interfacesTypesAndEnums';
+import { IDetailsObj } from '../../interfacesAndTypes';
 
 // This is a base component with no inherent functionality. All data and data manupulated is injected through props. But wait .. 
 // .. there is no data manipulation.

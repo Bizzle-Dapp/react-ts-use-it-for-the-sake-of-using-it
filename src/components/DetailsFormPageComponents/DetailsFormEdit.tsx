@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/App.css';
-import { IEditableDetailsObj } from '../../interfacesTypesAndEnums';
+import { IEditableDetailsObj } from '../../interfacesAndTypes';
 
 // This is a base component with no inherent functionality. All data and data manupulated is injected through props.
 export const DetailsFormEdit: React.FC<IEditableDetailsObj> = (props: IEditableDetailsObj) => {
