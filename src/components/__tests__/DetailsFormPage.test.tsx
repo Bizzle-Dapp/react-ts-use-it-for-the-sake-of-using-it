@@ -18,7 +18,7 @@ describe("Details Form Page Default", () => {
 })
 
 describe("Details Form Navigation", () => {
-    test("if selecting 'View' directs to the readonly inputs component", () => {
+    test("if selecting 'View' directs to the readonly inputs component and select 'Edit' after directs back to editable inputs component", () => {
         render(<DetailsFormPage/>);
         const nameInput = screen.getByTestId('Name-Form-Input');
         expect(nameInput.getAttribute("readonly")).toEqual(null);
@@ -27,6 +27,12 @@ describe("Details Form Navigation", () => {
 
         waitFor(() => {
             expect(nameInput.hasAttribute("readonly")).toBeTruthy();
+        });
+
+        userEvent.click(screen.getByTestId("Details-Form-Tab-Edit"));
+
+        waitFor(() => {
+            expect(nameInput.getAttribute("readonly")).toEqual(null);
         });
     })
 })
