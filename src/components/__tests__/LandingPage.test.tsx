@@ -6,13 +6,13 @@ import { LandingPage } from '../../components/index';
 test("When Image-Path-Input value is change, the src of the image should update", () => {
     render(<LandingPage/>)
     
-    let imagePath = screen.getByTestId("Image-Path-Input");
+    const imagePath = screen.getByTestId("Image-Path-Input");
     expect(imagePath).toBeDefined();
 
     userEvent.clear(imagePath);
     userEvent.type(imagePath, "TestPath.jpg");
     
-    let imageElement = screen.getByTestId("Image-Path-Output");
+    const imageElement = screen.getByTestId("Image-Path-Output");
 
     // using toContain("TestPath.jpg") here meant that this passed without.. 
     // userEvent.clear(imagePath), toEqual("TestPath.jpg") meant the strings.. 

@@ -28,10 +28,10 @@ export const DetailsFormPage: React.FC = () => {
         <div>
         <h1>Details Form</h1>
             <span className="Details-Form-Tab-Container">
-                <button onClick={() => { setSelectedTab(DetailsFormTabSelect.Edit) }} className="Details-Form-Tab-Button">
+                <button data-testid="Details-Form-Tab-Edit" onClick={() => { setSelectedTab(DetailsFormTabSelect.Edit) }} className="Details-Form-Tab-Button">
                     {DetailsFormTabSelect.Edit}
                 </button>
-                <button onClick={() => { setSelectedTab(DetailsFormTabSelect.View) }} className="Details-Form-Tab-Button">
+                <button data-testid="Details-Form-Tab-View" onClick={() => { setSelectedTab(DetailsFormTabSelect.View) }} className="Details-Form-Tab-Button">
                     {DetailsFormTabSelect.View}
                 </button>
             </span>
