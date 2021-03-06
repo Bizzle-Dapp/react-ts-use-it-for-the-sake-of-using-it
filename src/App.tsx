@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // Indexed export file for components to reduce import declarations. For the sake of it.
 import { NavBar, LandingPage, TimeOnAppPage, DetailsFormPage } from './components/index';
@@ -10,7 +10,7 @@ import { ThemeContext, getTheme } from './context/ThemeContext';
 
 // Default Theme and Styling import
 import './styles/App.css';
-import OmnipresentTimer from './components/OmnipresentTimer';
+import useOmnipresentTimer from './components/useOmnipresentTimer';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
               <DetailsFormPage />
             </Route>
             <Route path={pageTypes.timeOnApp}>
-              <TimeOnAppPage timeRef={OmnipresentTimer().timeOnApp}/>
+              <TimeOnAppPage timeRef={useOmnipresentTimer().timeOnApp}/>
             </Route>
             <Route path={pageTypes.landingPage}>
               <LandingPage />
