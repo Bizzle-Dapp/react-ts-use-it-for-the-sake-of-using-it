@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 // Indexed export file for components to reduce import declarations. For the sake of it.
-import { NavBar, LandingPage, TimeOnAppPage, DetailsFormPage } from './components/index';
+import { NavBar, LandingPage, TimeOnAppPage, DetailsFormPage, InputTest } from './components/index';
 // Indexed export file for enums to reduce import declarations. For the sake of it.
 import { pageTypes } from './interfacesAndTypes/index';
 
@@ -12,7 +12,6 @@ import { ThemeContext, getTheme } from './context/ThemeContext';
 import './styles/App.css';
 import useOmnipresentTimer from './components/useOmnipresentTimer';
 
-
 function App() {
   const [darkModeActive, setDarkModeActive] = useState<boolean>(false);
   return (
@@ -21,6 +20,9 @@ function App() {
         <Router>
           <NavBar />
           <Switch>
+          <Route path={pageTypes.inputTest}>
+              <InputTest />
+            </Route>
             <Route path={pageTypes.detailsForm}>
               <DetailsFormPage />
             </Route>

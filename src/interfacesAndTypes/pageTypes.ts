@@ -2,5 +2,6 @@
 export enum pageTypes {
     landingPage = '/',
     timeOnApp = '/timeOnApp',
-    detailsForm = '/detailsForm'
+    detailsForm = '/detailsForm',
+    inputTest = '/inputTest'
   }

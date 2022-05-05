@@ -2,6 +2,7 @@ import React, { useReducer, useState } from 'react';
 import { defaultDetailsState, detailsReducer } from '../reducers/DetailsFormReducer';
 import '../styles/App.css';
 import { DetailsFormEdit, DetailsFormView } from './index';
+import SelectBox from './SelectBox';
 
 enum DetailsFormTabSelect {
     Edit = "Edit",
@@ -26,6 +27,8 @@ export const DetailsFormPage: React.FC = () => {
     return(
         <>
         <div>
+        <h1>Some Select Box</h1>
+        <SelectBox/>
         <h1>Details Form</h1>
             <span className="Details-Form-Tab-Container">
                 <button data-testid="Details-Form-Tab-Edit" onClick={() => { setSelectedTab(DetailsFormTabSelect.Edit) }} className="Details-Form-Tab-Button">
