@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../styles/App.css';
+import MailTo from './MailToButton';
 import { NumberSorter } from './NumberSorter';
 
 
@@ -23,6 +24,9 @@ export const LandingPage: React.FC = () => {
             <img src={imageOnPage} data-testid="Image-Path-Output" style={{width:"300px"}} alt={`Unable to show path of: ${imageOnPage}`}/>
             <br/><br/>
             <NumberSorter />
+            <br/><br/>
+            <p>Example Mail To Button here:</p>
+            <MailTo/>
         </div>
     </>
     )
