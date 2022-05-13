@@ -6,6 +6,10 @@
 
 Well that's why I decided to make this. Aim is to use all the tools in the box for the sake of having a quick reference on how I last used them.
 
+I feel i should extend the above now this repo has become a dumping ground of various prototypes and sanity checks of solution. 
+
+This repo is literally my place to trial out solutions when needed before charging headlong into the problem in work environments. 
+
 # Stuff about this App:
 
 ## Available Scripts, always double check in package.json in case some crazy fool has changed them:
