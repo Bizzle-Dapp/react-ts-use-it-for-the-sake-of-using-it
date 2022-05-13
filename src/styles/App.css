@@ -26,6 +26,13 @@
   }
 }
 
+/* Disables printing in the browser */
+@media print {
+  html, body {
+    display: none;  /* hide whole page */
+  }
+}
+
 .App-header {
   font-size: calc(10px + 2vmin);
   margin-bottom: calc(1px + 2vmin);
