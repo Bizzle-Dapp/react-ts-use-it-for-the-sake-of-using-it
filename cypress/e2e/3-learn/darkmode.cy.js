@@ -8,13 +8,14 @@ describe('As a user, I should be able to toggle light and dark mode themes', () 
 
   it('turns page to dark mode', () => {
     cy.get('.Theme-Toggle').check()
+    cy.get('.App').should("have.css", "background-color", "rgb(40, 44, 52)")
   })
 
   // it('turns page to light mode', () => {
   //   cy.get('.Theme-Toggle').uncheck()
   // })
 
-  it('checks that page header is correct', () => {
-    cy.get('code').contains("React TS Use It For The Sake Of Using It")
-  })
+ 
+
+
 })
