@@ -10,12 +10,4 @@ describe('As a user, I should be able to toggle light and dark mode themes', () 
     cy.get('.Theme-Toggle').check()
     cy.get('.App').should("have.css", "background-color", "rgb(40, 44, 52)")
   })
-
-  // it('turns page to light mode', () => {
-  //   cy.get('.Theme-Toggle').uncheck()
-  // })
-
- 
-
-
 })
