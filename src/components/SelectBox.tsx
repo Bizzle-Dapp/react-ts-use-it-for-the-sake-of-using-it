@@ -17,7 +17,7 @@ const SelectBox: React.FC = () => {
 
     return(
         <>
-        <select onChange={(event) => handleSelectChange(event.target.value as unknown as ISelectChange)}>
+        <select id="selectOption" onChange={(event) => handleSelectChange(event.target.value as unknown as ISelectChange)}>
             <option value={SelectValues.OPTION_ONE}>{SelectValues.OPTION_ONE}</option>
             <option value={SelectValues.OPTION_TWO}>{SelectValues.OPTION_TWO}</option>
         </select>
